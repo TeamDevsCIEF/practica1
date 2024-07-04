@@ -31,36 +31,139 @@
     </header>
     <nav class="header_nav">
         <ul>
-            <li><a class="header_nav_titulo header_active" href="/">Home</a></li>
-            <li><a class="header_nav_titulo" href="/car.html">Coche</a></li>
+            <li><a class="header_nav_titulo" href="/">Home</a></li>
+            <li><a class="header_nav_titulo header_active" href="/car.html">Coche</a></li>
             <li><a class="header_nav_titulo" href="/moto.html">Moto</a></li>
             <li><a class="header_nav_titulo" href="/furgoneta.html">Furgoneta</a></li>
         </ul>
     </nav>
 
     <main>
-        <section id="home" class="section home_section">
+
+
+        <section id="car" class="section">
             <div class="video-container">
                 <video autoplay muted loop id="background-video">
-                    <source src="./video/video.mp4" type="video/mp4">
+                    <source src="./video/Audi.mp4" type="video/mp4">
                     Tu navegador no soporta HTML5 video.
                 </video>
-                <div class="overlay">
-                    <h1>Bienvenido a Ceballos Cars</h1>
-                    <p>Encuentra los mejores coches, motos y furgonetas en alquiler.</p>
-                    <form class="search-form">
-                        <label for="pickup-location">Ubicación de Recogida:</label>
-                        <input type="text" id="pickup-location" name="pickup-location" placeholder="Ciudad, Aeropuerto...">
-        
-                        <label for="pickup-date">Fecha de Recogida:</label>
-                        <input type="date" id="pickup-date" name="pickup-date">
-        
-                        <label for="return-date">Fecha de Devolución:</label>
-                        <input type="date" id="return-date" name="return-date">
-        
-                        <button type="submit">Buscar Vehículos</button>
-                    </form>
-                </div>
+            </div>
+            
+            <div class="card-container">
+                <article class="card">
+                    <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                    <div class="card_datos">
+                        <h3>Fiat Panda</h3>
+                        <p>Unidades Totales: 49.00€ por día</p>
+                        <button>
+                            <a href="#modalFiatPanda" class="button">Más Detalles</a>
+                        </button>
+                    </div>
+                    
+                    <div id="modalFiatPanda" class="modal" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <a href="#" class="close-button">&times;</a>
+                            </div>
+                            <div class="card_detalles">
+                                <div>
+                                    <h3>Fiat Panda</h3>
+                                    <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                                </div>
+                                <div class="caracteristicas">
+                                    <h3>Características</h3>
+                                    <div class="caracteristicas_detalladas">
+                                        <p><img src="icons/personas.svg" alt="Personas"> 5 personas</p>
+                                        <p><img src="icons/puertas.svg" alt="Puertas"> 4 puertas</p>
+                                        <p><img src="icons/cambio.svg" alt="Cambio"> Cambio: Manual</p>
+                                        <p><img src="icons/maletas.svg" alt="Maletas"> 2 maletas</p>
+
+                                        <p>Desde <span>€50</span> por día</p>
+
+                                        
+                                        <button>Precio Final Garantizado</button>
+                                        <button class="bReservar">Reservar</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="card">
+                    <img src="img/Fiat Panda.webp" alt="Coche Modelo 1">
+                    <div class="card_datos">
+                        <h3>Fiat Panda</h3>
+                        <p>Unidades Totales: 49.00€ por día</p>
+                        <button>
+                            <a href="#modal-coche1" class="button">Más Detalles</a>
+                        </button>
+                    </div>
+                    
+                </article>
+
+                <article class="card">
+                    <img src="img/Nissan Micra.webp" alt="Coche Modelo 1">
+                    <div class="card_datos">
+                        <h3>Nissan Micra</h3>
+                        <p>Unidades Totales: 53.00€ por día</p>
+                        <button>
+                            <a href="#modal-coche1" class="button">Más Detalles</a>
+                        </button>
+                    </div>
+                    
+                </article>
+
+                <article class="card">
+                    <img src="img/Nissan X-trail Auto.webp" alt="Coche Modelo 1">
+                    <div class="card_datos">
+                        <h3>Nissan X-trail Auto</h3>
+                        <p>Unidades Totales: 187.00€ por día</p>
+                        <button>
+                            <a href="#modal-coche1" class="button">Más Detalles</a>
+                        </button>
+                    </div>
+                    
+                </article>
+
+                <article class="card">
+                    <img src="img/Fiat 500 Cabrio.webp" alt="Coche Modelo 1">
+                    <div class="card_datos">
+                        <h3>Fiat 500 Cabrio</h3>
+                        <p>Unidades Totales: 77.00€ por día</p>
+                        <button>
+                            <a href="#modal-coche1" class="button">Más Detalles</a>
+                        </button>
+                    </div>
+                    
+                </article>
+
+                <article class="card">
+                    <img src="img/Opel ZafiraSG.webp" alt="Coche Modelo 1">
+                    <div class="card_datos">
+                        <h3>Opel ZafiraSG</h3>
+                        <p>Unidades Totales: 106.00€ por día</p>
+                        <button>
+                            <a href="#modal-coche1" class="button">Más Detalles</a>
+                        </button>
+                    </div>
+                    
+                </article>
+
+                <article class="card">
+                    <img src="img/Opel Corsa.webp" alt="Coche Modelo 1">
+                    <div class="card_datos">
+                        <h3>Opel Corsa</h3>
+                        <p>Unidades Totales: 57.00€ por día</p>
+                        <button>
+                            <a href="#modal-coche1" class="button">Más Detalles</a>
+                        </button>
+                    </div>
+                    
+                </article>
             </div>
         </section>
 
