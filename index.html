@@ -23,6 +23,13 @@
 </head>
 
 <body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="./video/video.mp4" type="video/mp4">
+            Tu navegador no soporta HTML5 video.
+        </video>
+        
+    </div>
     <header>
         <div class="header_container">
             <h1>Ceballos Cars</h1>
@@ -40,27 +47,21 @@
 
     <main>
         <section id="home" class="section home_section">
-            <div class="video-container">
-                <video autoplay muted loop id="background-video">
-                    <source src="./video/video.mp4" type="video/mp4">
-                    Tu navegador no soporta HTML5 video.
-                </video>
-                <div class="overlay">
-                    <h1>Bienvenido a Ceballos Cars</h1>
-                    <p>Encuentra los mejores coches, motos y furgonetas en alquiler.</p>
-                    <form class="search-form">
-                        <label for="pickup-location">Ubicación de Recogida:</label>
-                        <input type="text" id="pickup-location" name="pickup-location" placeholder="Ciudad, Aeropuerto...">
-        
-                        <label for="pickup-date">Fecha de Recogida:</label>
-                        <input type="date" id="pickup-date" name="pickup-date">
-        
-                        <label for="return-date">Fecha de Devolución:</label>
-                        <input type="date" id="return-date" name="return-date">
-        
-                        <button type="submit">Buscar Vehículos</button>
-                    </form>
-                </div>
+            <div class="overlay">
+                <h1>Bienvenido a Ceballos Cars</h1>
+                <p>Encuentra los mejores coches, motos y furgonetas en alquiler.</p>
+                <form class="search-form">
+                    <label for="pickup-location">Ubicación de Recogida:</label>
+                    <input type="text" id="pickup-location" name="pickup-location" placeholder="Ciudad, Aeropuerto...">
+    
+                    <label for="pickup-date">Fecha de Recogida:</label>
+                    <input type="date" id="pickup-date" name="pickup-date">
+    
+                    <label for="return-date">Fecha de Devolución:</label>
+                    <input type="date" id="return-date" name="return-date">
+    
+                    <button type="submit">Buscar Vehículos</button>
+                </form>
             </div>
         </section>
 

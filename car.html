@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +22,12 @@
 </head>
 
 <body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="./video/video.mp4" type="video/mp4">
+            Tu navegador no soporta HTML5 video.
+        </video>
+    </div>
     <header>
         <div class="header_container">
             <h1>Ceballos Cars</h1>
@@ -39,36 +44,29 @@
     </nav>
 
     <main>
-
-
-        <section id="car" class="section">
-            <div class="video-container">
-                <video autoplay muted loop id="background-video">
-                    <source src="./video/Audi.mp4" type="video/mp4">
-                    Tu navegador no soporta HTML5 video.
-                </video>
-            </div>
+        <section id="car" class="home_section var_w">
+            
             
             <div class="card-container">
                 <article class="card">
-                    <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                    <picture>
+                        <source media="(min-width: 3600px)" srcset="img/Fiat Panda.webp">
+                        <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                    </picture>
                     <div class="card_datos">
                         <h3>Fiat Panda</h3>
                         <p>Unidades Totales: 49.00€ por día</p>
-                        <button>
-                            <a href="#modalFiatPanda" class="button">Más Detalles</a>
-                        </button>
+                        <a href="#modalFiatPanda">Más Detalles</a>                        
                     </div>
-                    
-                    <div id="modalFiatPanda" class="modal" aria-hidden="true">
+                    <dialog id="modalFiatPanda" class="modal" aria-hidden="true">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <a href="#" class="close-button">&times;</a>
+                            <div class="modal-header"><a href="#" class="close-button">&times;</a>
                             </div>
                             <div class="card_detalles">
                                 <div>
                                     <h3>Fiat Panda</h3>
                                     <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam laborum saepe voluptatum maxime repudiandae, voluptates, aspernatur nisi libero, fugiat harum eius quod neque dolorem consectetur officiis aliquam reprehenderit! Odio voluptatibus ducimus ipsum quisquam ipsam eos.</p>
                                 </div>
                                 <div class="caracteristicas">
                                     <h3>Características</h3>
@@ -77,164 +75,248 @@
                                         <p><img src="icons/puertas.svg" alt="Puertas"> 4 puertas</p>
                                         <p><img src="icons/cambio.svg" alt="Cambio"> Cambio: Manual</p>
                                         <p><img src="icons/maletas.svg" alt="Maletas"> 2 maletas</p>
-
-                                        <p>Desde <span>€50</span> por día</p>
-
-                                        
+                                        <p>Desde <span>49€</span> por día</p>                                        
                                         <button>Precio Final Garantizado</button>
                                         <button class="bReservar">Reservar</button>
                                     </div>
-                                    
                                 </div>
-                            </div>
-                            
+                            </div>                            
                         </div>
-                    </div>
-
+                    </dialog>
                 </article>
-
+                
                 <article class="card">
-                    <img src="img/Fiat Panda.webp" alt="Coche Modelo 1">
-                    <div class="card_datos">
-                        <h3>Fiat Panda</h3>
-                        <p>Unidades Totales: 49.00€ por día</p>
-                        <button>
-                            <a href="#modal-coche1" class="button">Más Detalles</a>
-                        </button>
-                    </div>
-                    
-                </article>
-
-                <article class="card">
-                    <img src="img/Nissan Micra.webp" alt="Coche Modelo 1">
+                    <picture>
+                        <source media="(min-width: 3600px)" srcset="img/Nissan Micra.webp">
+                        <img src="img/Nissan Micra.webp" alt="Nissan Micra">
+                    </picture>
                     <div class="card_datos">
                         <h3>Nissan Micra</h3>
                         <p>Unidades Totales: 53.00€ por día</p>
-                        <button>
-                            <a href="#modal-coche1" class="button">Más Detalles</a>
-                        </button>
+                        <a href="#modalNissanMicra">Más Detalles</a>                        
                     </div>
-                    
+                    <dialog id="modalNissanMicra" class="modal" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="modal-header"><a href="#" class="close-button">&times;</a>
+                            </div>
+                            <div class="card_detalles">
+                                <div>
+                                    <h3>Nissan Micra</h3>
+                                    <img src="img/Nissan Micra.webp" alt="Nissan Micra">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam laborum saepe voluptatum maxime repudiandae, voluptates, aspernatur nisi libero, fugiat harum eius quod neque dolorem consectetur officiis aliquam reprehenderit! Odio voluptatibus ducimus ipsum quisquam ipsam eos.</p>
+                                </div>
+                                <div class="caracteristicas">
+                                    <h3>Características</h3>
+                                    <div class="caracteristicas_detalladas">
+                                        <p><img src="icons/personas.svg" alt="Personas"> 5 personas</p>
+                                        <p><img src="icons/puertas.svg" alt="Puertas"> 5 puertas</p>
+                                        <p><img src="icons/cambio.svg" alt="Cambio"> Cambio: Manual</p>
+                                        <p><img src="icons/maletas.svg" alt="Maletas"> 1 maletas</p>
+                                        <p>Desde <span>53€</span> por día</p>                                        
+                                        <button>Precio Final Garantizado</button>
+                                        <button class="bReservar">Reservar</button>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </dialog>
                 </article>
-
+                
                 <article class="card">
-                    <img src="img/Nissan X-trail Auto.webp" alt="Coche Modelo 1">
+                    <picture>
+                        <source media="(min-width: 3600px)" srcset="img/Nissan X-trail Auto.webp">
+                        <img src="img/Nissan X-trail Auto.webp" alt="Nissan X-trail Auto">
+                    </picture>
                     <div class="card_datos">
                         <h3>Nissan X-trail Auto</h3>
                         <p>Unidades Totales: 187.00€ por día</p>
-                        <button>
-                            <a href="#modal-coche1" class="button">Más Detalles</a>
-                        </button>
+                        <a href="#modalNissanXtrail">Más Detalles</a>                        
                     </div>
-                    
+                    <dialog id="modalNissanXtrail" class="modal" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="modal-header"><a href="#" class="close-button">&times;</a>
+                            </div>
+                            <div class="card_detalles">
+                                <div>
+                                    <h3>Nissan X-trail Auto</h3>
+                                    <img src="img/Nissan X-trail Auto.webp" alt="Nissan X-trail Auto">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam laborum saepe voluptatum maxime repudiandae, voluptates, aspernatur nisi libero, fugiat harum eius quod neque dolorem consectetur officiis aliquam reprehenderit! Odio voluptatibus ducimus ipsum quisquam ipsam eos.</p>
+                                </div>
+                                <div class="caracteristicas">
+                                    <h3>Características</h3>
+                                    <div class="caracteristicas_detalladas">
+                                        <p><img src="icons/personas.svg" alt="Personas"> 7 personas</p>
+                                        <p><img src="icons/puertas.svg" alt="Puertas"> 5 puertas</p>
+                                        <p><img src="icons/cambio.svg" alt="Cambio"> Cambio: Manual</p>
+                                        <p><img src="icons/maletas.svg" alt="Maletas"> 3 maletas</p>
+                                        <p>Desde <span>187€</span> por día</p>                                        
+                                        <button>Precio Final Garantizado</button>
+                                        <button class="bReservar">Reservar</button>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </dialog>
                 </article>
-
+                
                 <article class="card">
-                    <img src="img/Fiat 500 Cabrio.webp" alt="Coche Modelo 1">
+                    <picture>
+                        <source media="(min-width: 3600px)" srcset="img/Fiat 500 Cabrio.webp">
+                        <img src="img/Fiat 500 Cabrio.webp" alt="Fiat 500 Cabrio">
+                    </picture>
                     <div class="card_datos">
                         <h3>Fiat 500 Cabrio</h3>
                         <p>Unidades Totales: 77.00€ por día</p>
-                        <button>
-                            <a href="#modal-coche1" class="button">Más Detalles</a>
-                        </button>
+                        <a href="#modalFiat500Cabrio">Más Detalles</a>                        
                     </div>
-                    
+                    <dialog id="modalFiat500Cabrio" class="modal" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="modal-header"><a href="#" class="close-button">&times;</a>
+                            </div>
+                            <div class="card_detalles">
+                                <div>
+                                    <h3>Fiat 500 Cabrio</h3>
+                                    <img src="img/Fiat 500 Cabrio.webp" alt="Fiat 500 Cabrio">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam laborum saepe voluptatum maxime repudiandae, voluptates, aspernatur nisi libero, fugiat harum eius quod neque dolorem consectetur officiis aliquam reprehenderit! Odio voluptatibus ducimus ipsum quisquam ipsam eos.</p>
+                                </div>
+                                <div class="caracteristicas">
+                                    <h3>Características</h3>
+                                    <div class="caracteristicas_detalladas">
+                                        <p><img src="icons/personas.svg" alt="Personas"> 2 personas</p>
+                                        <p><img src="icons/puertas.svg" alt="Puertas"> 2 puertas</p>
+                                        <p><img src="icons/cambio.svg" alt="Cambio"> Cambio: Auto</p>
+                                        <p><img src="icons/maletas.svg" alt="Maletas"> 0 maletas</p>
+                                        <p>Desde <span>77€</span> por día</p>                                        
+                                        <button>Precio Final Garantizado</button>
+                                        <button class="bReservar">Reservar</button>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </dialog>
                 </article>
-
+                
                 <article class="card">
-                    <img src="img/Opel ZafiraSG.webp" alt="Coche Modelo 1">
+                    <picture>
+                        <source media="(min-width: 3600px)" srcset="img/Fiat Panda.webp">
+                        <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                    </picture>
                     <div class="card_datos">
-                        <h3>Opel ZafiraSG</h3>
-                        <p>Unidades Totales: 106.00€ por día</p>
-                        <button>
-                            <a href="#modal-coche1" class="button">Más Detalles</a>
-                        </button>
+                        <h3>Fiat Panda</h3>
+                        <p>Unidades Totales: 49.00€ por día</p>
+                        <a href="#modalFiatPanda">Más Detalles</a>                        
                     </div>
-                    
+                    <dialog id="modalFiatPanda" class="modal" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="modal-header"><a href="#" class="close-button">&times;</a>
+                            </div>
+                            <div class="card_detalles">
+                                <div>
+                                    <h3>Fiat Panda</h3>
+                                    <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam laborum saepe voluptatum maxime repudiandae, voluptates, aspernatur nisi libero, fugiat harum eius quod neque dolorem consectetur officiis aliquam reprehenderit! Odio voluptatibus ducimus ipsum quisquam ipsam eos.</p>
+                                </div>
+                                <div class="caracteristicas">
+                                    <h3>Características</h3>
+                                    <div class="caracteristicas_detalladas">
+                                        <p><img src="icons/personas.svg" alt="Personas"> 5 personas</p>
+                                        <p><img src="icons/puertas.svg" alt="Puertas"> 4 puertas</p>
+                                        <p><img src="icons/cambio.svg" alt="Cambio"> Cambio: Manual</p>
+                                        <p><img src="icons/maletas.svg" alt="Maletas"> 2 maletas</p>
+                                        <p>Desde <span>49€</span> por día</p>                                        
+                                        <button>Precio Final Garantizado</button>
+                                        <button class="bReservar">Reservar</button>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </dialog>
                 </article>
-
+                
                 <article class="card">
-                    <img src="img/Opel Corsa.webp" alt="Coche Modelo 1">
+                    <picture>
+                        <source media="(min-width: 3600px)" srcset="img/Fiat Panda.webp">
+                        <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                    </picture>
                     <div class="card_datos">
-                        <h3>Opel Corsa</h3>
-                        <p>Unidades Totales: 57.00€ por día</p>
-                        <button>
-                            <a href="#modal-coche1" class="button">Más Detalles</a>
-                        </button>
+                        <h3>Fiat Panda</h3>
+                        <p>Unidades Totales: 49.00€ por día</p>
+                        <a href="#modalFiatPanda">Más Detalles</a>                        
                     </div>
-                    
+                    <dialog id="modalFiatPanda" class="modal" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="modal-header"><a href="#" class="close-button">&times;</a>
+                            </div>
+                            <div class="card_detalles">
+                                <div>
+                                    <h3>Fiat Panda</h3>
+                                    <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam laborum saepe voluptatum maxime repudiandae, voluptates, aspernatur nisi libero, fugiat harum eius quod neque dolorem consectetur officiis aliquam reprehenderit! Odio voluptatibus ducimus ipsum quisquam ipsam eos.</p>
+                                </div>
+                                <div class="caracteristicas">
+                                    <h3>Características</h3>
+                                    <div class="caracteristicas_detalladas">
+                                        <p><img src="icons/personas.svg" alt="Personas"> 5 personas</p>
+                                        <p><img src="icons/puertas.svg" alt="Puertas"> 4 puertas</p>
+                                        <p><img src="icons/cambio.svg" alt="Cambio"> Cambio: Manual</p>
+                                        <p><img src="icons/maletas.svg" alt="Maletas"> 2 maletas</p>
+                                        <p>Desde <span>49€</span> por día</p>                                        
+                                        <button>Precio Final Garantizado</button>
+                                        <button class="bReservar">Reservar</button>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </dialog>
                 </article>
+                
+                <article class="card">
+                    <picture>
+                        <source media="(min-width: 3600px)" srcset="img/Fiat Panda.webp">
+                        <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                    </picture>
+                    <div class="card_datos">
+                        <h3>Fiat Panda</h3>
+                        <p>Unidades Totales: 49.00€ por día</p>
+                        <a href="#modalFiatPanda">Más Detalles</a>                        
+                    </div>
+                    <dialog id="modalFiatPanda" class="modal" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="modal-header"><a href="#" class="close-button">&times;</a>
+                            </div>
+                            <div class="card_detalles">
+                                <div>
+                                    <h3>Fiat Panda</h3>
+                                    <img src="img/Fiat Panda.webp" alt="Fiat Panda">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam laborum saepe voluptatum maxime repudiandae, voluptates, aspernatur nisi libero, fugiat harum eius quod neque dolorem consectetur officiis aliquam reprehenderit! Odio voluptatibus ducimus ipsum quisquam ipsam eos.</p>
+                                </div>
+                                <div class="caracteristicas">
+                                    <h3>Características</h3>
+                                    <div class="caracteristicas_detalladas">
+                                        <p><img src="icons/personas.svg" alt="Personas"> 5 personas</p>
+                                        <p><img src="icons/puertas.svg" alt="Puertas"> 4 puertas</p>
+                                        <p><img src="icons/cambio.svg" alt="Cambio"> Cambio: Manual</p>
+                                        <p><img src="icons/maletas.svg" alt="Maletas"> 2 maletas</p>
+                                        <p>Desde <span>49€</span> por día</p>                                        
+                                        <button>Precio Final Garantizado</button>
+                                        <button class="bReservar">Reservar</button>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </dialog>
+                </article>
+                
+                
             </div>
+
+    
+            
         </section>
 
     </main>
 
     <footer>
-
-        <div class="footer-extended">
-            <div class="services">
-                <h2>Nuestros Servicios</h2>
-                <div class="services-container">
-                    <div class="service-item">
-                        <img src="img/footer/rentCard.png" alt="Servicio 1">
-                        <h3>Alquiler de Coches</h3>
-                        <p>Ofrecemos una amplia variedad de coches para que elijas el que mejor se adapte a tus necesidades y presupuesto.</p>
-                    </div>
-                    <div class="service-item">
-                        <img src="img/footer/rentMoto.png" alt="Servicio 2">
-                        <h3>Alquiler de Motos</h3>
-                        <p>Explora la ciudad con nuestras motos de alquiler, ideales para desplazamientos rápidos y económicos.</p>
-                    </div>
-                    <div class="service-item">
-                        <img src="img/footer/rentFurgoneta.png" alt="Servicio 3">
-                        <h3>Alquiler de Furgonetas</h3>
-                        <p>Perfectas para mudanzas o transporte de mercancías, nuestras furgonetas están disponibles en diferentes tamaños.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="highlights">
-                <h2>Características Destacadas</h2>
-                <div class="highlights-container">
-                    <div class="highlight-item">
-                        <img src="img/footer/precioCompetitivo.png" alt="Destacado 1">
-                        <h3>Precios Competitivos</h3>
-                        <p>Ofrecemos tarifas asequibles y descuentos especiales para alquileres a largo plazo.</p>
-                    </div>
-                    <div class="highlight-item">
-                        <img src="img/footer/24-7.png" alt="Destacado 2">
-                        <h3>Atención al Cliente 24/7</h3>
-                        <p>Nuestro equipo de atención al cliente está disponible las 24 horas del día para ayudarte en lo que necesites.</p>
-                    </div>
-                    <div class="highlight-item">
-                        <img src="img/footer/flotaModerna.png" alt="Destacado 3">
-                        <h3>Flota Moderna</h3>
-                        <p>Contamos con una flota de vehículos modernos y bien mantenidos para garantizar tu seguridad y comodidad.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="testimonials">
-                <h2>Testimonios de Clientes</h2>
-                <div class="testimonials-container">
-                    <div class="testimonial-item">
-                        <img src="img/footer/cliente1.png" alt="Cliente 1">
-                        <blockquote>"Excelente servicio y precios muy competitivos. Definitivamente volveré a alquilar con ellos."</blockquote>
-                        <p>- Juan Pérez</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="img/footer/cliente2.png" alt="Cliente 2">
-                        <blockquote>"Las motos son geniales para moverse por la ciudad. Me encantó la experiencia."</blockquote>
-                        <p>- María García</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <img src="img/footer/cliente3.png" alt="Cliente 3">
-                        <blockquote>"Las furgonetas son perfectas para mudanzas. Muy espaciosas y en excelente estado."</blockquote>
-                        <p>- Carlos Sánchez</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="footer-main">
             <div>
@@ -279,13 +361,7 @@
             </div>
 
         </div>
-
-        
-
     </footer>
-
-
-
 </body>
 
 </html>
