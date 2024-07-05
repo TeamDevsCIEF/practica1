@@ -140,7 +140,7 @@ main{
             border: solid 1px var(--color-primary--gris);
             border-radius: 7.5px;
             padding: 15px;
-            background: var(--color-blanco);
+            background: rgb(255, 255, 255,0.15);
 
             
             img {width: 100%;}
