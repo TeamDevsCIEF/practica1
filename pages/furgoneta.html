@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Página web de alquiler de coches, motos y furgonetas.">
+    <meta name="keywords" content="alquiler, coches, motos, furgonetas, vehículos, rent a car">
+    <meta name="author" content="Tu Nombre">
+    <meta property="og:title" content="Super Cars - Alquiler de vehículos">
+    <meta property="og:description" content="Encuentra los mejores coches, motos y furgonetas en alquiler.">
+    <meta property="og:image" content="url-de-la-imagen.jpg">
+    <meta property="og:url" content="https://www.ejemplo.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Super Cars - Alquiler de vehículos">
+    <meta name="twitter:description" content="Encuentra los mejores coches, motos y furgonetas en alquiler.">
+    <meta name="twitter:image" content="url-de-la-imagen.jpg">
+    <link rel="icon" href="../img/favicon.ico" type="../image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Ceballos Cars - Alquiler de vehículos</title>
+    
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="../video/video.mp4" type="video/mp4">
+            Tu navegador no soporta HTML5 video.
+        </video>
+    </div>
+    <header>
+        <div class="header_container">
+            <h1>Ceballos Cars</h1>
+            <h2>Modelos de Coches</h2>
+        </div>
+    </header>
+    <nav class="header_nav">
+        <ul>
+            <li><a class="header_nav_titulo" href="../">Home</a></li>
+            <li><a class="header_nav_titulo header_active" href="./car.html">Coche</a></li>
+            <li><a class="header_nav_titulo" href="./moto.html">Moto</a></li>
+            <li><a class="header_nav_titulo" href="./furgoneta.html">Furgoneta</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="car" class="section var_w">
+            
+            
+            <div class="card-container">
+                
+                <article class="card">
+                    <picture>
+                        <source media="(min-width: 3600px)" srcset="../img/Nissan Primastar.webp">
+                        <img src="../img/Nissan Primastar.webp" alt="Nissan Primastar">
+                    </picture>
+                    <div class="card_datos">
+                        <h3>Nissan Primastar</h3>
+                        <p>Unidades Totales: 149.00€ por día</p>
+                        <a href="#modalNissanPrimastar">Más Detalles</a>                        
+                    </div>
+                    <dialog id="modalNissanPrimastar" class="modal" aria-hidden="true">
+                        <div class="modal-content">
+                            <div class="modal-header"><a href="#" class="close-button">&times;</a>
+                            </div>
+                            <div class="card_detalles">
+                                <div>
+                                    <h3>Nissan Primastar</h3>
+                                    <img src="../img/Nissan Primastar.webp" alt="Nissan Primastar">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam laborum saepe voluptatum maxime repudiandae, voluptates, aspernatur nisi libero, fugiat harum eius quod neque dolorem consectetur officiis aliquam reprehenderit! Odio voluptatibus ducimus ipsum quisquam ipsam eos.</p>
+                                </div>
+                                <div class="caracteristicas">
+                                    <h3>Características</h3>
+                                    <div class="caracteristicas_detalladas">
+                                        <p><img src="../icons/personas.svg" alt="Personas"> 5 personas</p>
+                                        <p><img src="../icons/puertas.svg" alt="Puertas"> 4 puertas</p>
+                                        <p><img src="../icons/cambio.svg" alt="Cambio"> Cambio: Manual</p>
+                                        <p><img src="../icons/maletas.svg" alt="Maletas"> 2 maletas</p>
+                                        <p>Desde <span>149€</span> por día</p>                                        
+                                        <button>Precio Final Garantizado</button>
+                                        <button class="bReservar">Reservar</button>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </dialog>
+                </article>
+                     
+            </div>
+
+    
+            
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-main">
+            <div>
+                <h3>Redes Sociales</h3>
+                <ul class="redes_sociales">
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="../icons/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><img src="../icons/x.png" alt="twitter"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="../icons/instagram.png" alt="instagram"></a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contacta con Nosotros</h3>
+                <ul>
+                    <li><a href="mailto:contacto@ceballoscars.com">contacto@ceballoscars.com</a></li>
+                    <li><a href="tel:+123456789">+1 234 567 89</a></li>
+                    <li><a href="https://www.ejemplo.com" target="_blank">www.ejemplo.com</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#terminos">Términos y Condiciones</a></li>
+                    <li><a href="#privacidad">Política de Privacidad</a></li>
+                    <li><a href="#cookies">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="#historia">Nuestra Historia</a></li>
+                    <li><a href="#equipo">Nuestro Equipo</a></li>
+                    <li><a href="#valores">Nuestros Valores</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Ayuda</h3>
+                <ul>
+                    <li><a href="#faq">Preguntas Frecuentes</a></li>
+                    <li><a href="#soporte">Soporte Técnico</a></li>
+                    <li><a href="#contacto">Contáctanos</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
